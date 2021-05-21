@@ -22,8 +22,9 @@ echo $hname > /etc/hostname
 echo "root:toor" | chpasswd
 pacman --noconfirm -S vim net-tools dhcpcd \
 man-db man-pages texinfo wget screen grub openssh git \
-keychain virtualbox-guest-utils-nox
+keychain virtualbox-guest-utils-nox encfs
 systemctl enable dhcpcd@enp0s3
+sed -i 's/#PermitRootLogin prohibit-password.*/PermitRootLogin yes/' /etc/ssh/sshd_config
 systemctl enable sshd
 cat <<EOF > /etc/hosts
 127.0.0.1       localhost 
