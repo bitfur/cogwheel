@@ -1,5 +1,5 @@
 #!/bin/bash
-# Custom MRB install of Arch
+# Custom MBR type install of Arch
 timedatectl set-ntp true
 echo -e "n\np\n\n\n+1024MB\nt\n82\nw\n" | fdisk /dev/sda
 echo -e "n\np\n\n\n\nw\n" | fdisk /dev/sda
