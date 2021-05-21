@@ -22,7 +22,7 @@ echo $hname > /etc/hostname
 echo "root:toor" | chpasswd
 pacman --noconfirm -S vim net-tools dhcpcd \
 man-db man-pages texinfo wget screen grub openssh git \
-keychain
+keychain virtualbox-guest-utils-nox
 systemctl enable dhcpcd@enp0s3
 systemctl enable sshd
 cat <<EOF > /etc/hosts
