@@ -21,7 +21,7 @@ hname=swamp
 echo $hname > /etc/hostname
 echo "root:toor" | chpasswd
 pacman --noconfirm -S vim net-tools dhcpcd \
-man-db man-pages texinfo wget screen grub openssh
+man-db man-pages texinfo wget screen grub openssh git
 systemctl enable dhcpcd@enp0s3
 systemctl enable sshd
 cat <<EOF > /etc/hosts
