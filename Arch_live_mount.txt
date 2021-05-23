@@ -1,0 +1,5 @@
+pacman -Sy virtualbox-guest-utils-nox
+modprobe vboxsf
+mount -t vboxsf Downloads /mnt/host_downloads
+
+
