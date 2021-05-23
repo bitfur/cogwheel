@@ -1,0 +1,3 @@
+See conf files without comments and empty lines:
+grep -v '^$\|^\s*\#' /etc/squid/squid.conf
+
