@@ -1,0 +1,26 @@
+Settings:
+{
+    "workbench.colorTheme": "Monokai",
+    "editor.fontFamily": "Consolas, monospace",
+    "editor.fontWeight": "normal",
+    "window.zoomLevel": 1,
+    "breadcrumbs.enabled": true,
+    "editor.quickSuggestionsDelay": 500,
+    "editor.renderIndentGuides": false,
+    "terminal.integrated.allowChords": false,
+    "glassit.alpha": 225,
+    "workbench.editorAssociations": [],
+    "editor.minimap.enabled": true,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+}
+
+Bind:
+[
+    { "key": "ctrl+`", "command": "workbench.action.terminal.focus"},
+    { "key": "ctrl+`", "command": "workbench.action.focusActiveEditorGroup", "when": "terminalFocus"},
+    { "key": "ctrl+shift+j", "command": "workbench.action.terminal.focusNext" },
+    { "key": "ctrl+shift+k", "command": "workbench.action.terminal.focusPrevious" },
+    { "key": "ctrl+shift+r", "command": "workbench.action.terminal.rename"}
+
+]
+
